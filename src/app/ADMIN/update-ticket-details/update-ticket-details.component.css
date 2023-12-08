@@ -1,0 +1,21 @@
+.full-width{
+    width: 100%;
+}
+a{
+    font-size: 16px;
+    font-family: cursive;
+    padding-left: 40%;
+    color: blue;
+    margin: auto;
+}
+button{
+    font-family: cursive;
+}
+.mat{
+    padding: 25px;
+    margin: 10px;
+}
+.links{
+    margin-left: 25px;
+    color: blue;
+}

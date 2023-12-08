@@ -1,0 +1,80 @@
+/* Add your component-specific styles here */
+
+h2 {
+    padding-top: 20px;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .panel-body {
+    margin: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .ticket-card {
+    width: 300px;
+  }
+  
+  .header-image {
+    background-image: url('../../../assets/register.png'); /* Add an image or remove this line */
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+
+  .search-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="search"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #2980b9;
+}
+.section{
+  margin: 15dp;
+  padding-top:30px;
+}
+.btn{
+  padding-left: 14px;
+  margin: 15px;
+  border-radius: 4px;
+  padding: 15px 40px;
+}
+.btn:hover {
+  background-color: #04AA6D;
+  color: white;
+}

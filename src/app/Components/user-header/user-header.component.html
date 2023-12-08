@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+    <a routerLink="/userHome" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <img src="../../../assets/destination.png" alt="">
+    </a>
+    <span>
+        <p class="p">TravelTicketBooking</p>
+    </span>
+
+    <span class="example-spacer"></span>
+    <button routerLink="/login" mat-button>Login</button>
+    <button routerLink="/signup" mat-button>Register</button>
+    <button routerLink="/userHome" mat-button>
+        <mat-icon matSuffix>home</mat-icon>
+    </button>
+    <button mat-button [mat-menu-trigger-for]="about">
+        <mat-icon>account_circle</mat-icon>
+        <mat-menu #about>
+            <button routerLink="/userTicketDetails" mat-menu-item>UserTicket Details</button>
+        </mat-menu>
+    </button>
+</mat-toolbar>

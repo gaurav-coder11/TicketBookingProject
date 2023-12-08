@@ -1,0 +1,27 @@
+.full-width{
+    width: 100%;
+}
+a{
+    font-size: 16px;
+    font-family: cursive;
+    padding-left: 20%;
+    color: blue;
+    margin: auto;
+}
+button{
+    font-family: cursive;
+}
+.row{
+    margin-top: 2px;
+}
+.card{
+    padding: 25px;
+}
+/* .bootstrap-wrapper{ */
+    /* background-color: aqua; */
+    /* padding-top: 25px; */
+/* } */
+.links{
+    margin-left: 25px;
+    color: blue;
+}

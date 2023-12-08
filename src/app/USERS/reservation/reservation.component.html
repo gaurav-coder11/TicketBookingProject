@@ -1,0 +1,80 @@
+<app-user-header></app-user-header>
+<div class="bootstrap-wrapper">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 offset-md-3">
+              <mat-card class="mat text-center">
+                  <div class="container text-center">
+                      <!-- <img src="../../../assets/register.png" alt="register image" height="100px" length="50px" -->
+                      <!-- redious="5px"> -->
+                  </div>
+                  <h1 class="text-center">Book Your Tickets !!..</h1>
+                  <!-- {{ user | json}} -->
+
+                  <!--username fields-->
+                  <form (ngSubmit)="reservTicket()">
+
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Customer Name</mat-label>
+                      <input [(ngModel)]="ticketDetails.userName" name="username" type="text" matInput
+                          placeholder="enter username" required>
+                  </mat-form-field>
+
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Mobile Number</mat-label>
+                    <input [(ngModel)]="ticketDetails.mobNumb" name="mobno" type="text" maxlength="10" matInput
+                        placeholder="enter mobile number" required>
+                </mat-form-field>
+
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <input [(ngModel)]="ticketDetails.email" name="email" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" matInput
+                      placeholder="enter email" required>
+              </mat-form-field>
+
+                      <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>Bus Name</mat-label>
+                          <input [(ngModel)]="ticketDetails.busName" name="busname" type="text" matInput
+                              placeholder="enter busname" required>
+                      </mat-form-field>
+
+                      <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>Destination</mat-label>
+                          <input [(ngModel)]="ticketDetails.destination" name="destination" type="text" matInput
+                              placeholder="enter destination" required>
+                      </mat-form-field>
+
+                      <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>From location</mat-label>
+                          <input [(ngModel)]="ticketDetails.fromDest" name="fdest" type="text" matInput
+                              placeholder="enter starting location" required>
+                      </mat-form-field>
+
+                      <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>To location</mat-label>
+                          <input [(ngModel)]="ticketDetails.toDest" name="toDest" type="text" matInput
+                              placeholder="enter to destination" required>
+                      </mat-form-field>
+
+                      <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>Date</mat-label>
+                          <input [(ngModel)]="ticketDetails.date" name="date" type="text" matInput
+                              placeholder="enter date" required>
+                      </mat-form-field>
+
+                       <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>To location</mat-label>
+                          <input [(ngModel)]="ticketDetails.price" name="price" type="text" matInput
+                              placeholder="enter to destination" required>
+                      </mat-form-field>
+
+                      <div class="container">
+                          <button type="submit" mat-raised-button color="accent">Book Your Ticket</button>
+                          <!-- <button class="links" (click)="gotoDetails()" mat-button color="primary">Go Details</button> -->
+                      </div>
+                  </form>
+              </mat-card>
+          </div>
+      </div>
+  </div>
+</div>

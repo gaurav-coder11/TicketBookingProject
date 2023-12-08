@@ -1,0 +1,36 @@
+<app-user-header></app-user-header>
+<!-- <div class="panel-body">
+    <section class="search-section">
+      <div class="search-container">
+        <input type="text" [(ngModel)]="searchText" placeholder="Search">
+        <button (click)="filteredItems">Go</button>
+      </div>
+    </section>
+   -->
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+
+<div class="text-center">
+  <h2>Book Your Ticket</h2>
+</div>
+<div class="panel-body">
+  <div class="card-container">
+    <mat-card *ngFor="let ticket of ticketDetails" class="ticket-card">
+      <mat-card-header>
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>{{ ticket.busName }}</mat-card-title>
+        <mat-card-subtitle *ngFor="let item of filteredItems">{{ ticket.destination }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>From: {{ ticket.fromDest }}</p>
+        <p>To: {{ ticket.toDest }}</p>
+        <p>Date: {{ ticket.date}}</p>
+        <p>Price: {{ ticket.price }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button (click)="bookYourTickets(ticket.id)" mat-button color="primary">Book Your Ticket</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

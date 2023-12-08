@@ -1,0 +1,29 @@
+<app-header></app-header>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+
+<div class="text-center">
+  <h2>Booking List</h2>
+</div>
+<div class="panel-body">
+  <div class="card-container">
+    <mat-card *ngFor="let ticket of ticketDetails" class="ticket-card">
+      <mat-card-header>
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>{{ ticket.busName }}</mat-card-title>
+        <mat-card-subtitle>{{ ticket.destination }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>From: {{ ticket.fromDest }}</p>
+        <p>To: {{ ticket.toDest }}</p>
+        <p>Date: {{ ticket.date}}</p>
+        <p>Seats: {{ ticket.seats }}</p>
+        <p>Price: {{ ticket.price }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button (click)="deleteTicket(ticket.id)" mat-button color="warn">Delete</button>
+        <button (click)="updateTicket(ticket.id)" mat-button color="primary">Update</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

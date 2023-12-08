@@ -1,0 +1,32 @@
+/* Add your component-specific styles here */
+
+h2 {
+    padding-top: 20px;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .panel-body {
+    margin: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .ticket-card {
+    width: 300px;
+  }
+  
+  .header-image {
+    background-image: url('../../../assets/register.png'); /* Add an image or remove this line */
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
